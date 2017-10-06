@@ -47,15 +47,55 @@ div#contenido{
 	z-index: 20;
 	display: none;
 }
+#icono1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#icono2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#icono3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#icono4{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
 .nombreMenu{
 	color: #ffffff;
-	/*display: none;*/
+	display: none;
 }
-.icono{
-	padding-right: 0;
-}
-
 #contenido:hover div#menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icono1:hover .eliminar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icono2:hover .editar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icono3:hover .asignar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icono4:hover .agregar{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
