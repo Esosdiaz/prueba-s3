@@ -3,13 +3,17 @@
 	padding:0;
 	font-family: 'Lato', sans-serif;
 }
-.cont{
+.tarjeta{
+	position: relative;
+	margin: 10px;
+}
+div#contenido{
 	height: 42px;
-	width: auto;
+	width: 100%;
 	border: solid 2px #A4A4A4;
 	display: flex;
 	flex-direction: row;
-	padding: 3px;
+	position: absolute;
 }
 .texto{
 	overflow:hidden;
@@ -27,15 +31,32 @@
 	color: #FF8000;
 	font-size: 20px;
 }
-.toolbox{
-	height: 44px;
-	width: auto;
+
+#menu{
+	height: 42px;
+	width: 100%;
+	font-size: 20px;
+	color: #FF8000;
 	border: solid 2px #A4A4A4;
 	background-color: #A4A4A4;
-	position: relative;
-	top: -50px;
-	visibility: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	z-index: 20;
+	display: none;
 }
-div#cont:hover div#menu{
-	visibility: visible;
+.nombreMenu{
+	color: #ffffff;
+	/*display: none;*/
+}
+.icono{
+	padding-right: 0;
+}
+
+#contenido:hover div#menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
