@@ -10,6 +10,7 @@
 div#contenido{
 	height: 42px;
 	width: 100%;
+	border-radius: 5px;
 	border: solid 2px #A4A4A4;
 	display: flex;
 	flex-direction: row;
@@ -19,26 +20,26 @@ div#contenido{
 	overflow:hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 10px;
 }
 .fa-circle-o{
-	padding: 3px;
-	color: #FF8000;
+    padding: 10px;
+    color: #FF8000;
 	font-size: 20px;
 }
 .fa-wrench{
-	padding: 3px;
+	padding: 10px;
 	color: #FF8000;
 	font-size: 20px;
 }
-
 #menu{
 	height: 42px;
 	width: 100%;
-	font-size: 20px;
+	border-radius: 5px;
+	font-size: 15px;
 	color: #FF8000;
-	border: solid 2px #A4A4A4;
-	background-color: #A4A4A4;
+	background-color: rgba(0,0,0,0.5);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -53,11 +54,54 @@ div#contenido{
 	justify-content: space-between;
 	align-items: center;
 }
+.menuChico{
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	width: 100px;
+	height: auto;
+	position: absolute;
+	border-radius: 10px;
+	top: 41px;
+	padding: 10px;
+	border: solid 2px #A4A4A4;
+	color: #ffffff;
+	display: none;
+}
+.boton{
+	height: auto;
+	width: auto;
+	background-color: #01DF01;
+	border-radius: 5px;
+	padding:5px;
+	color: #ffffff;
+}
 #icono2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+.relojCont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.verde{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #01DF01;
+	border-radius: 15px;
+	width: 40px;
+	height: 20px;
+	color: #ffffff;
+	font-size: 10px;
 }
 #icono3 {
 	display: flex;
@@ -80,11 +124,18 @@ div#contenido{
 	flex-direction: row;
 	justify-content: space-around;
 }
+
 #icono1:hover .eliminar{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
+#icono1:hover .menuChico{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 #icono2:hover .editar{
 	display: flex;
 	flex-direction: row;
